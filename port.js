@@ -23,17 +23,17 @@
    */
 
   const PHOTOS = [
+    "portimg/bakes.png",
     "portimg/breaksgrunge.png",
     "portimg/breakssubway.png",
     "portimg/breakssticker.png",
     "portimg/testcase.png",
-    "portimg/bakes.png",
     "portimg/breaksgenint.png",
-    "portimg/lemonblur.png",
+    "portimg/melee.png",
     "portimg/limoncello.png",
     "portimg/bearbakerie.png",
-    "portimg/melee.png",
     "portimg/capybaras.png",
+    "portimg/lemonblur.png",
     "portimg/cards.png",
     "portimg/suspects.png",
     "portimg/birthday.png",
@@ -80,7 +80,8 @@
 
   function display() {
     let num = PHOTOS.length;
-    for (let i = num - 1; i >= 0; i--) {
+    // for (let i = num - 1; i >= 0; i--) {
+    for (let i = 0; i < num; i++) {
       let add = document.createElement("img");
       add.src = PHOTOS[i];
       add.alt = PHOTOS_ALT[i];
