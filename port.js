@@ -24,7 +24,6 @@
 
   const PHOTOS = [
     "portimg/bakes.png",
-    "portimg/breaksgrunge.png",
     "portimg/breakssubway.png",
     "portimg/breakssticker.png",
     "portimg/testcase.png",
@@ -36,6 +35,7 @@
     "portimg/lemonblur.png",
     "portimg/cards.png",
     "portimg/suspects.png",
+    "portimg/breaksgrunge.png",
     "portimg/birthday.png",
     "portimg/shadow.png",
     "portimg/battrump.png"
