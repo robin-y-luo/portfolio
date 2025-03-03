@@ -3,6 +3,12 @@
 
   /**
    * PORTFOLIO IMAGES
+      * CALISTHENICS
+        * - black tshirt
+        * - white tshirt
+        * - bonanza
+        * - tryouts
+        * - rucc spring interest
       * RUBREAKS
         * - grunge logo (breaksgrunge)
         * - subway logo edit (breakssubway)
@@ -23,6 +29,15 @@
    */
 
   const PHOTOS = [
+    "portimg/mwsefinal2.png",
+    "portimg/mwse2.png",
+    "portimg/meleead.png",
+    "portimg/spr.png",
+    "portimg/tryouts.png",
+    "portimg/bonb.png",
+    "portimg/lanyard.png",
+    "portimg/blackmockup.png",
+    "portimg/whitemockup.png",
     "portimg/bakes.png",
     "portimg/breakssubway.png",
     "portimg/breakssticker.png",
@@ -118,54 +133,54 @@
 
 
   /** this function toggles "daytime" or "nighttime" for the page theme */
-  function time() {
-    id("photos").classList.toggle("night");
-    id("body").classList.toggle("nightbkgd");
-    id("header").classList.toggle("nighttxt");
-    let button1 = document.querySelector('button');
-    button1.classList.toggle("nightbtn");
-    button1.classList.toggle("nightbtnhvr");
-    button1.classList.toggle("nightbtnact");
-  }
+  // function time() {
+  //   id("photos").classList.toggle("night");
+  //   id("body").classList.toggle("nightbkgd");
+  //   id("header").classList.toggle("nighttxt");
+  //   let button1 = document.querySelector('button');
+  //   button1.classList.toggle("nightbtn");
+  //   button1.classList.toggle("nightbtnhvr");
+  //   button1.classList.toggle("nightbtnact");
+  // }
 
   /** this function adds another stuffed animal image to the page */
-  function add() {
-    let friend = document.createElement("img");
-    let select = Math.floor((PHOTOS.length) * Math.random());
-    friend.src = PHOTOS[select];
-    friend.alt = PHOTOS_ALT[select];
-    id("photos").appendChild(friend);
-  }
+  // function add() {
+  //   let friend = document.createElement("img");
+  //   let select = Math.floor((PHOTOS.length) * Math.random());
+  //   friend.src = PHOTOS[select];
+  //   friend.alt = PHOTOS_ALT[select];
+  //   id("photos").appendChild(friend);
+  // }
 
   /** this function takes away the last stuffed animal image */
-  function subtract() {
-    if (id("photos").lastChild !== null) {
-      id("photos").removeChild(id("photos").lastChild);
-    }
-  }
+  // function subtract() {
+  //   if (id("photos").lastChild !== null) {
+  //     id("photos").removeChild(id("photos").lastChild);
+  //   }
+  // }
 
   /** this function changes the last added stuffed animal image to a different one */
-  function different() {
-    if (id("photos").lastChild !== null) {
-      id("photos").removeChild(id("photos").lastChild);
-    }
-    add();
-  }
+  // function different() {
+  //   if (id("photos").lastChild !== null) {
+  //     id("photos").removeChild(id("photos").lastChild);
+  //   }
+  //   add();
+  // }
 
   /** this function changes all the images on the page to a bear image with evil eyebrows */
-  function evil() {
-    let images = document.querySelectorAll("img");
-    for (let i = 0; i < images.length; i++) {
-      // unedited bear source: https://shop.san-x.co.jp/product/detail/RLK8893
-      images[i].src = "img/evil.png";
-      images[i].alt = "an evil stuffed bear";
-    }
-  }
+  // function evil() {
+  //   let images = document.querySelectorAll("img");
+  //   for (let i = 0; i < images.length; i++) {
+  //     // unedited bear source: https://shop.san-x.co.jp/product/detail/RLK8893
+  //     images[i].src = "img/evil.png";
+  //     images[i].alt = "an evil stuffed bear";
+  //   }
+  // }
 
-  function reset(){
-    let all = document.getElementById("photos");
-    all.innerHTML = "";
-  }
+  // function reset(){
+  //   let all = document.getElementById("photos");
+  //   all.innerHTML = "";
+  // }
 
   // HELPER FUNCTIONS
 
@@ -183,17 +198,17 @@
    * @param {string} selector - CSS query selector
    * @returns {object[]} array of DOM objects matching the query.
    */
-  function qsa(selector) {
-    return document.querySelectorAll(selector);
-  }
+  // function qsa(selector) {
+  //   return document.querySelectorAll(selector);
+  // }
 
   /**
    * Returns a new element with the given tag name.
    * @param {string} tagName - HTML tag name for new DOM element.
    * @returns {object} New DOM object for given HTML tag.
    */
-  function gen(tagName) {
-    return document.createElement(tagName);
-  }
+  // function gen(tagName) {
+  //   return document.createElement(tagName);
+  // }
 
 })();
